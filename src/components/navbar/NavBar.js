@@ -1,6 +1,7 @@
 import { Button, ButtonGroup, Container, Typography } from '@mui/material'
 import { styled } from '@mui/system';
 import React from 'react';
+import logo from '../../assets/logo.png'
 
 const NavContainer = styled(Container)({
   display: 'flex',
@@ -14,10 +15,12 @@ export const NavBar = () => {
         variant='h4'
         color={'primary'}
       >
+        <img src={logo} alt='logo' width={20}/>
         ScriptLeaf
       </Typography>
       
       <ButtonGroup variant='outline' >
+        
         <Button>
           Recent Views
         </Button>
