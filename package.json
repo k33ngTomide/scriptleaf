@@ -25,6 +25,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -48,5 +49,11 @@
   },
   "devDependencies": {
     "tailwindcss": "^3.4.3"
+  },
+  "build": {
+    "env": {
+      "CI": "true"
+    },
+    "command": "npm install --force && npm run build"
   }
 }
