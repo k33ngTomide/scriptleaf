@@ -31,7 +31,6 @@ function App() {
           <Route path= '/show/books' element= {<BookPage/>}/>,
           <Route path= '/show/movies' element= {<MoviePage/>}/>,
         ]}
-      
       />
     </Routes>
 
