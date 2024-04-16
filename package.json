@@ -7,7 +7,7 @@
     "@emotion/styled": "^11.11.5",
     "@fontsource/roboto": "^5.0.12",
     "@mui/icons-material": "^5.15.14",
-    "@mui/material": "^5.15.14",
+    "@mui/material": "^5.15.15",
     "@mui/styled-engine-sc": "^6.0.0-alpha.18",
     "@mui/styles": "^5.15.15",
     "@testing-library/jest-dom": "^5.17.0",
@@ -22,6 +22,10 @@
     "styled-components": "^6.1.8",
     "web-vitals": "^2.1.4"
   },
+  "peerDependencies": {
+    "react": "^17.0.0 || ^18.0.0",
+    "react-dom": "^17.0.0 || ^18.0.0"
+  },  
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -56,5 +60,4 @@
   "devDependencies": {
     "tailwindcss": "^3.4.3"
   }
-  
 }
