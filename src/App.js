@@ -4,9 +4,11 @@ import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 
 import './App.css';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import {Route, Routes } from 'react-router-dom';
 import Home from './pages/home/Home';
-import BookContainer from './components/booksContainer/BookContainer';
+import ShowGlass from './pages/showRoom/ShowGlass';
+import BookPage from './pages/bookPage/BookPage';
+import MoviePage from './pages/moviePage/MoviePage';
 
 
 function App() {
@@ -17,7 +19,17 @@ function App() {
         path= '/'
         element={<Home/>}
         children={[ 
-          <Route path= '/' element= {<BookContainer/>}/>
+          <Route path= '/' element= {<BookPage/>}/>,
+        ]}
+      
+      />
+
+      <Route 
+        path= '/show'
+        element={<ShowGlass/>}
+        children={[ 
+          <Route path= '/show/books' element= {<BookPage/>}/>,
+          <Route path= '/show/movies' element= {<MoviePage/>}/>,
         ]}
       
       />

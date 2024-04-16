@@ -1,17 +1,14 @@
-import { Container, Typography } from '@mui/material'
+import { Container} from '@mui/material'
 import React from 'react'
+import { Outlet } from 'react-router-dom'
+import { NavBar } from '../../components/navbar/NavBar'
 
-const ShowGlass = ({show}) => {
+const ShowGlass = ({content}) => {
   return (
     <Container>
-      <Typography
-        variant='h2'
-        color={'primary'}
-
-      >
-        {show}
-      </Typography>
-
+      {/* <Detail showing={content}/> */}
+      <NavBar/>
+      <Outlet/>
     </Container>
   )
 }
